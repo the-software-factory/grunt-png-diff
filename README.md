@@ -30,7 +30,7 @@ grunt.initConfig({
         // Custom options, see below
       },
       origin: 'path/to/origin/directory',
-      destination: "path/to/destionation/directory'
+      destination: 'path/to/destionation/directory'
     },
   },
 });
@@ -97,7 +97,7 @@ grunt.initConfig({
 });
 
 grunt.loadNpmTasks('grunt-png-diff');
-grunt.registerTask('shots-compare', ['png_diff:your_target]);
+grunt.registerTask('shots-compare', ['png_diff:your_target']);
 ```
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
