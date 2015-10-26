@@ -1,0 +1,46 @@
+{
+  "name": "grunt-png-diff",
+  "description": "Test if PNG images in a directory are equal each other with a customizable percentage of acceptable mismatch.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mbellagamba/png-diff",
+  "author": {
+    "name": "Mirco Bellagamba",
+    "email": "mbellagamba@vendini.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mbellagamba/png-diff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbellagamba/png-diff/issues"
+  },
+  "license": "MIT",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://github.com/mbellagamba/png-diff/blob/master/LICENSE-MIT"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.5.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-shell": "^1.1.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "colors": "^1.1.2",
+    "pngjs": "^2.0.0",
+    "streamifier": "^0.1.1"
+  }
+}
