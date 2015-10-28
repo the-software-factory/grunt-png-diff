@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 
     // Configuration to be run (and then tested).
     png_diff: {
-      passing: {
+      default_options: {
         options: {
           reference: 'img0.png',
           antiAliasing: true,
@@ -40,10 +40,20 @@ module.exports = function (grunt) {
         },
         origin: 'test/fixtures',
         destination: 'test/output'
+      },
+      recursive_options: {
+        options: {
+          reference: 'OS X 10.10chrome.png',
+          antiAliasing: true,
+          threshold: 0.1,
+          tolerance: 10
+        },
+        origin: 'test/recursive',
+        destination: 'test/output'
       }
     },
     shell: {
-      jasmine:{
+      jasmine: {
         command: 'jasmine JASMINE_CONFIG_PATH=test/jasmine.json'
       }
     }

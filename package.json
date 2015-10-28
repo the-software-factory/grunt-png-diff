@@ -23,7 +23,8 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "jasmine": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json"
   },
   "devDependencies": {
     "concat-stream": "^1.5.1",

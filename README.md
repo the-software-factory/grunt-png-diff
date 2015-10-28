@@ -39,6 +39,23 @@ grunt.initConfig({
 The `origin` is the folder that contains images to compare, the `destination` is the directory where comparison result
 images will be saved. The `options` defines the configuration of the comparison.
 
+If the origin folder contains any sub-folders, then it will recursively tests all sub-folders which contains only files.
+This means that if a folder contains a sub-directory and some other files, then those files will be ignored.
+e.g.
+```
+main_directory
+  |-main_sub_directory1
+  |  |-file1             // this file will be ignored
+  |  |-file2             // this file will be ignored
+  |  |-sub_directory
+  |    |-file3           // this file will be compared with file4 if both PNG
+  |    |-file4
+  |-main_sub_directory2
+    |-file5              // this file will be compared with file6 if both PNG
+    |-file6
+```
+Tests could be used as further documentation.
+
 ### Options
 
 #### options.reference
