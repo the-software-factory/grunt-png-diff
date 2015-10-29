@@ -54,7 +54,7 @@ module.exports = function (grunt) {
     },
     shell: {
       jasmine: {
-        command: 'jasmine JASMINE_CONFIG_PATH=test/jasmine.json'
+        command: ' node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=test/jasmine.json'
       }
     }
 
