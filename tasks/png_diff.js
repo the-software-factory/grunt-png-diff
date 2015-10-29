@@ -39,6 +39,7 @@ module.exports = function (grunt) {
     // Count total comparison to do. If count is 0, then the origin directory does not have any sub-directory so it is
     // set to 1, because only one comparison is needed.
     var compareCount = origCheck.countFileSubDirsRecursive() || 1;
+    var testCount = compareCount;
 
     grunt.file.mkdir(destination);
 
@@ -48,16 +49,15 @@ module.exports = function (grunt) {
     /**
      * Displays a final report of the test. If any test failed, logs filename and error. It finally calls the callback
      * `done`, to make aware grunt the execution is finished.
-     * @param {number} testCount the number of tests.
      */
-    function displayTotalResult(testCount) {
+    function displayTotalResult() {
       grunt.log.writeln();
 
       var returnValue = 0;
 
       if (failures !== 0) {
         grunt.log.write(failReport['red']);
-        returnValue = new Error(failures.length + '/' + testCount + ' tests failed. See failing images above.');
+        returnValue = new Error(failures + '/' + testCount + ' tests failed. See failing images above.');
         grunt.fail.warn(returnValue);
       } else {
         grunt.log.write(okReport);
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
 
       compareCount--;
       if (compareCount === 0) {
-        displayTotalResult(diffResults.comparisons.length);
+        displayTotalResult();
       }
     }
 
