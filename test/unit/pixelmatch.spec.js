@@ -1,6 +1,8 @@
 describe('Pixel match', function() {
   'use strict';
 
+  // TODO Remove this test and its fixtures when updated npm package is available
+
   var PNG = require('pngjs').PNG,
     fs = require('fs'),
     path = require('path'),

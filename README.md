@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/the-software-factory/grunt-png-diff.svg?branch=master)](https://travis-ci.org/the-software-factory/grunt-png-diff)
+
 # grunt-png-diff
 
 > Test if PNG images in a directory are equal each other with a customizable percentage of acceptable mismatch.

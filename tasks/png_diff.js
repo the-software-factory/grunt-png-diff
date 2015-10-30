@@ -78,13 +78,13 @@ module.exports = function (grunt) {
           grunt.log.write('.'['green']);
           okReport += shotsDir + result.filename + ' fulfilled expectations.\n' +
             'Error: ' + result.error + '%\n' +
-            'Number of different pixels: ' + result.differentPixels + '\n';
+            'Number of different pixels: ' + result.differentPixels + '\n\n';
         } else {
           grunt.log.write('F'['red']);
           failures++;
           failReport += failures + '. ' + shotsDir + result.filename + ' failed expectations.\n' +
             'Error: ' + result.error + '%\n' +
-            'Number of different pixels: ' + result.differentPixels + '\n';
+            'Number of different pixels: ' + result.differentPixels + '\n\n';
         }
       });
 

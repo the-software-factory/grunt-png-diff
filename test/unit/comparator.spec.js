@@ -3,9 +3,6 @@ describe('Comparator', function () {
 
   var Comparator = require('../../lib/comparator');
   var comparator, origDir = 'orig/', destDir = 'dest/';
-  var helperMatch = {
-    pixelmatch: require('../../lib/pixelmatch')
-  };
   var fs = require('fs');
   var helperPngjs = {
     PNG:require('pngjs').PNG

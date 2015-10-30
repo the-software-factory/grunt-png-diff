@@ -1,6 +1,8 @@
 describe('PNG crop\'s', function () {
   'use strict';
 
+  // TODO Remove this test and its fixtures when updated npm package is available
+
   var concat = require('concat-stream');
   var fs = require('fs');
 
