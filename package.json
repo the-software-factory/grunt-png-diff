@@ -32,13 +32,20 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-shell": "^1.1.2",
+    "istanbul": "^0.4.0",
     "jasmine": "^2.3.2"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "png-diff",
+    "image-diff",
+    "png-compare",
+    "comparison",
+    "diff",
+    "grunt-diff"
   ],
   "dependencies": {
     "colors": "^1.1.2",
